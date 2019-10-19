@@ -18,11 +18,7 @@ class Logged extends Component {
         <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="Eg. Simoleans, Pokecoins, etc." value={this.props.name} className="field" />
     </div>
 
-    <Router>
-        
-    <Route exact path="/home" component={HomePage}  />
-    <Link to="home"> Log in </Link>
-    </Router>
+  
     <br/> 
     <button onClick={this.props.doSomething}className="currency-list">I don't have an account!</button>
 </form>

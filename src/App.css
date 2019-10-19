@@ -50,7 +50,16 @@
 
 
 .topnav {
-  background-color: #333;
+  display: -moz-inline-box;
+  height: 121%; /* 100% Full-height */
+  width: 30%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  margin: 20px;
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 0;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
   overflow: hidden;
 }
 
