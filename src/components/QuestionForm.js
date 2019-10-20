@@ -4,7 +4,10 @@ import HomePage from '../components/HomePage'
 import {Link} from 'react-router-dom'
 import QuestionOne from './QuestionOne'
 import QuestionTwo from './QuestionTwo'
+import QuestionThree from './QuestionThree'
 import Success from './Success'
+
+import Dashboard from './Dashboard'
 
 class QuestionForm extends Component {
 
@@ -12,8 +15,10 @@ class QuestionForm extends Component {
     state = {
         step: 1,
         questionOne: "",
-        questionTwo: ""
-      }
+        questionTwo: "",
+        questionThree: "",
+        id: ""
+            }
 
       nextStep=()=> {
         const {step} = this.state;
@@ -28,7 +33,28 @@ class QuestionForm extends Component {
           step: step - 1
         })
       }
-   
+
+
+      saveStory = () => { 
+        fetch('http://localhost:3000/stories', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              questionOne: this.state.questionOne,
+              questionTwo: this.state.questionTwo,
+              questionThree: this.state.questionThree
+            })
+          })
+          .then(alert(this.state.questionThree))
+          .then(this.setState({step: 0}))
+        }
+
+
+     
+
 
 
       handleChange= input => e  =>{ 
@@ -46,17 +72,6 @@ render(){
         case 1:
             return (
                 <QuestionOne nextStep={this.nextStep} handleChange={this.handleChange} values={values} questionOne={this.state.questionOne}/>
-//         <div className="form-group">
-// <h1 className="header-one">Question 1</h1>
-// < br/>
-// <form onSubmit={(e)=>this.handlesubmit(e, this.state)}> 
-//     <div className="form-group">
-//         <label> What thing do you like? </label> <br/>
-//         <input onChange={this.handleChange} autoComplete='off' type='text' name='name' placeholder="Eg. Things." value={this.state.questionOne} className="field" />
-//     </div>
-//     <Link to="/home" className="currency-list"><button onClick={(e)=>this.props.handlesubmit(e, this.state)}>submit</button></Link>
-// </form>
-// </div>
     )
 
     case 2:
@@ -64,11 +79,23 @@ render(){
               <QuestionTwo nextStep={this.nextStep} previousStep={this.previousStep} handleChange={this.handleChange} values={values} questionTwo={this.state.questionTwo}/>
             )
 
-            case 3:
+    case 3:
+              return (
+                <QuestionThree nextStep={this.nextStep} previousStep={this.previousStep}  handleChange={this.handleChange} values={values} questionThree={this.state.questionThree} />
+              )
+
+   case 4:
               return (
                 <Success questionOne={this.state.questionOne}
-                questionTwo={this.state.questionTwo}/>
+                questionTwo={this.state.questionTwo} questionThree={this.state.questionThree} saveStory={this.saveStory}/>
               )
+
+             
+
+              case 0:
+                return (
+                  <Dashboard />
+                )
             
 }}
 }

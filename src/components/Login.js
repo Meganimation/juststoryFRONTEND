@@ -10,11 +10,10 @@ class Login extends Component {
     render() {
     return ( 
         <div className="form-group">
-<h1 className="header-one">Sign up</h1>
-< br/>
+<h1 className="header-one">Oh. </h1>
 <form> 
     <div className="form-group">
-        <label> Whats your name? </label> <br/>
+        <label> It's okay. There is a first time for everything. </label> 
         <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="Eg. Simoleans, Pokecoins, etc." value={this.props.name} className="field" />
     </div>
     <div>

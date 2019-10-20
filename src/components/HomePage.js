@@ -1,6 +1,7 @@
 import React from 'react';
 import MainContainer from './MainContainer';
 import NavBar from  './NavBar';
+import {Link} from 'react-router-dom'
 
 class HomePage extends React.Component {
 
@@ -11,6 +12,7 @@ render() {
     {/* <NavBar /> */}
  .
       <header className="App-header">
+
 
     <MainContainer />
 

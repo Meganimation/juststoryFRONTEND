@@ -10,16 +10,12 @@ class Logged extends Component {
     render() {
     return ( 
         <div className="form-group">
-<h1 className="header-one">Login</h1>
-< br/>
 <form> 
     <div className="form-group">
-        <label> Please enter your email </label> <br/>
-        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="Eg. Simoleans, Pokecoins, etc." value={this.props.name} className="field" />
+    <h2 className="header-one">hello. would you like to log in?</h2>
+        <label> e m a i l </label> 
+        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="enter your email here." value={this.props.name} className="field" />
     </div>
-
-  
-    <br/> 
     <button onClick={this.props.doSomething}className="currency-list">I don't have an account!</button>
 </form>
 </div>

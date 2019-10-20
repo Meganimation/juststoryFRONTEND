@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import QuestionForm from './QuestionForm'
 import NavBar from  './NavBar'
-import GenreCard from './GenreCard'
-import Stories from './Stories'
+import GenreContainer from './GenreContainer'
+import StoryContainer from './StoryContainer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom'
-
+import YourStory from './YourStory'
 
 
 
@@ -13,8 +13,30 @@ class MainContainer extends Component {
 
 state = {
   step: 1,
-words: ""
+  stories: [],
+  users: [],
+  genres: []
 }
+
+
+componentDidMount(){
+  fetch('http://localhost:3000/stories')
+  .then(res => res.json())
+  .then(data => this.setState({stories: data}))
+}
+
+componentDidMount(){
+  fetch('http://localhost:3000/users')
+  .then(res => res.json())
+  .then(data => this.setState({users: data}))
+}
+
+componentDidMount(){
+  fetch('http://localhost:3000/genres')
+  .then(res => res.json())
+  .then(data => this.setState({genres: data}))
+}
+
 
 
 
@@ -32,19 +54,24 @@ this.setState({[input]: e.target.value})
  
 
 
-  render() {
 
+  render() {
   return ( 
     <>
+
     <Router>
-    <NavBar /> 
+       <NavBar /> 
+   
     <div> Hello and  Welcome to the MAIN container<div />
+
     <Switch>
-    <Route exact path="/stories" component={Stories} />
-    <Route exact path="/home" component={GenreCard}  />
+ 
+    <Route exact path="/home" component={GenreContainer}  />
+    <Route exact path="/home/stories" component={StoryContainer} />
     <Route exact path="/home/question" component={QuestionForm} />
+    <Route exact path="/home/stories/yourstory" component={YourStory} />
+
     </Switch>
-    <Link to="/home/question" > Click me </Link>
       </div>
     </Router>
     </>  

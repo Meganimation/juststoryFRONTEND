@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a2c0fa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,10 +34,12 @@
 }
 
 .form-group {
-  border: 5px solid rgb(3, 65, 90);
+  border: 5px solid #a2c0fa;
   padding:  0em 1em;
   border-radius: 16px;
-  font-size: 24px;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(47, 43, 77, 0.452);
   line-height: 2;
   margin: 40px;
   display: flex;
@@ -50,11 +52,11 @@
 
 
 .topnav {
-  display: -moz-inline-box;
-  height: 121%; /* 100% Full-height */
-  width: 30%; /* 0 width - change this with JavaScript */
+  display: flexbox;
+  height: 100%; /* 100% Full-height */
+  width: 1; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  margin: 20px;
+  margin: 0px;
   z-index: 1; /* Stay on top */
   top: 1; /* Stay at the top */
   left: 0;
@@ -72,6 +74,22 @@
   text-decoration: none;
   font-size: 17px;
 }
+
+.storyCards {
+  display: inline-flex;
+  float: left;
+
+  height: 100%; /* 100% Full-height */
+  width: 1; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  margin: 2px;
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 0;
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5;
+}
+
 
 /* Change the color of links on hover */
 .topnav a:hover {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
-
-class Success extends Component {
+class Dashboard extends Component {
 
    
     continue =  (e) => {
@@ -19,12 +19,14 @@ class Success extends Component {
 render() {
 return (
     <>
-    <h1> Once upon a time there a person who hated {this.props.questionOne}, because he dreams of {this.props.questionTwo}. The End </h1>
-    <button onClick={this.props.saveStory}>save this story</button>
+    <h1> Done! </h1>
+    <Link to="./stories"> View Story </Link >
+    
+  
     </>
     )}
 }
 
 
 
-export default Success;
+export default Dashboard;

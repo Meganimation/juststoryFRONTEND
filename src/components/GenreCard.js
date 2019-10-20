@@ -1,18 +1,26 @@
-import React, { Component } from 'react'
-
-
+import React from 'react'
 
 
 
 class GenreCard extends React.Component {
+
+  
+  renderFunction=(event)=>{
+
+    if (event.target.name === "Horror"){
+    console.log('It equals Horror!')
+    }
+    else console.log(this.props)
+  }
+
+
+ 
+
   render() {
   return ( 
-    <div> Hello and  Welcome to the Genre Card Container<div />
-<p> Select a Genre </p>
-<img src="http://www.bizreport.com/2011/02/03/android-logo-200x200.jpg"  />
-
-  </div>
-
+    <div> 
+  This is the Genre Card, Please Select a Genre: <li onClick={this.renderFunction}>{this.props.genre}<br /></li>
+</div>
    
   
   );

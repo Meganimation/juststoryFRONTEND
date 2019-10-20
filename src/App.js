@@ -4,7 +4,7 @@ import './App.css';
 import LoginSignup from  './LoginSignup'
 // import NavBar from  './components/NavBar'
 import HomePage from  './components/HomePage'
-import Stories from  './components/Stories'
+import Stories from  './components/Story'
 import { Link } from 'react-router-dom';
 import QuestionForm from './components/QuestionForm';
 
