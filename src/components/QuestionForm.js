@@ -48,7 +48,6 @@ class QuestionForm extends Component {
               questionThree: this.state.questionThree
             })
           })
-          .then(alert(this.state.questionThree))
           .then(this.setState({step: 0}))
         }
 
@@ -71,6 +70,7 @@ render(){
     switch(step) {
         case 1:
             return (
+              
                 <QuestionOne nextStep={this.nextStep} handleChange={this.handleChange} values={values} questionOne={this.state.questionOne}/>
     )
 

@@ -4,7 +4,7 @@ import MainContainer from './components/MainContainer'
 import './App.css';
 import Login from  './components/Login'
 import Logged from  './components/Logged'
-import NavBar from  './components/NavBar'
+import GenreContainer from  './components/GenreContainer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class LoginSignup extends React.Component {
@@ -46,10 +46,12 @@ render() {
 
   return (
     <Router>
-
-    <div className="App">
+    <Switch>
+    <Route exact path="/home" component={MainContainer}  />
+    </Switch>
+    
   
-    <header className="App-header">
+    <div className="App-header">
     {LoggedInorNot} 
 
 
@@ -57,8 +59,8 @@ render() {
 
   
 
-      </header>
-    </div>
+      </div>
+   
     </Router>
   );
 }

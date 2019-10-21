@@ -13,10 +13,13 @@ class GenreContainer extends React.Component {
   render() {
   
   return ( 
-    <div> Hello and  Welcome to the Genre Container<div />
-<p> Select a Genre </p>
-< Link to="/home/question">xx</Link> 
+  <div className='fixBox'>
+<Link to="/home/question"> <button className="myButton">create a story</button></Link> 
+  <br />
+  <br />
+  < Link to="/home/stories"> <button className="myButton">view stories</button></Link> 
   </div>
+
   );
 }}
 

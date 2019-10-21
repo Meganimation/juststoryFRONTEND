@@ -8,17 +8,30 @@ class Logged extends Component {
 
     
     render() {
+        var msg = new SpeechSynthesisUtterance('Hello World');
+
     return ( 
+        
+        <>
         <div className="form-group">
 <form> 
-    <div className="form-group">
-    <h2 className="header-one">hello. would you like to log in?</h2>
-        <label> e m a i l </label> 
-        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="enter your email here." value={this.props.name} className="field" />
-    </div>
-    <button onClick={this.props.doSomething}className="currency-list">I don't have an account!</button>
+
+    
+    <br/>
+        <label > email: </label> 
+        <br/>
+        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="enter your username here." value={this.props.name} className="field" />
+        <br/>
+        <label> password: </label> 
+          <br/>
+        <input onChange={this.props.handleChange} autoComplete='off' type='text' name='name' placeholder="enter your password here." value={this.props.name} className="field" />
+   
+    <br/>   <br/>
+  
+    <button className="myButton" onClick={this.props.doSomething}>I don't have an account!</button>
 </form>
 </div>
+</>
     
     );
   }}

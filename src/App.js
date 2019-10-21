@@ -35,7 +35,7 @@ render() {
     <Route exact path="/home" component={HomePage} />
     </Switch>
 
-    <Link to="home">Login</Link>
+    <Link exact to="/home"><button className="myButton">login as guest</button></Link>
    
       </header>
     </div>

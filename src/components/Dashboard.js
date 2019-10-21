@@ -19,8 +19,10 @@ class Dashboard extends Component {
 render() {
 return (
     <>
-    <h1> Done! </h1>
-    <Link to="./stories"> View Story </Link >
+    <h1 className="headerStyle"> saved! </h1>
+    <Link to="./stories"> <button  className="myOtherHomeButton">View Story </button></Link >
+    <br/>
+    <Link exact to="./"> <button  className="myOtherHomeButton">Go Home </button></Link >
     
   
     </>

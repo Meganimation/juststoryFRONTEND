@@ -9,11 +9,11 @@ return (
 <div className="topnav">
   <Link exact to="/home/stories" className="active">Stories</Link>
   <br/>
-  <a href="#news">Profile</a>
   <br/>
-  <a href="#contact">Saved Stories</a>
   <br/>
-  <a href="#about">About</a>
+  <Link exact to="/home" className="active">Home</Link>
+  <br/>
+
 </div>
 )
 

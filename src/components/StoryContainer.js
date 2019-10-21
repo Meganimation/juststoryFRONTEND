@@ -1,5 +1,7 @@
 import React from 'react'
 import Story from './Story'
+import NavBar from './NavBar'
+import { Link } from 'react-router-dom'
 
 class StoryContainer extends React.Component {
 
@@ -23,17 +25,24 @@ class StoryContainer extends React.Component {
 
 allStories=()=>{
    return this.state.stories.map(story =>{
-      return <Story key={story.id} story={story} />
+      return <Story key={story.id} story={story}/> 
   })
   }
 
     render(){
         return (
             <>
-            <div className="storyCards">
-                <h1>Here are your stories</h1>
+          
+             <h3 className="headerStyle">previously saved stories</h3>
+                <br />
                 {this.allStories()}
-                </div></>
+                <br />
+                <br />
+                <Link exact to="/home" > 
+                 <button className="myHomeButton">Home</button>
+                 </Link>
+                 <br />   
+              </>
                 )
             }
 

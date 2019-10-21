@@ -25,10 +25,11 @@ class Story extends React.Component {
 
     render(){
         return (
-            <>
-         
-           <Link to={{ pathname: '/home/stories/yourstory', state: { story: this.state.yourStory} }}> {this.props.story.questionThree}</Link>
-        </>
+            
+            <div >
+           <Link to={{ pathname: '/home/stories/yourstory', state: { story: this.state.yourStory} }}>   
+           <ul ><button className="myButton">{this.props.story.questionThree}</button></ul></Link>
+        </div>
         )
     }
 

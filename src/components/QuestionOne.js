@@ -8,7 +8,11 @@ class QuestionOne extends Component {
 
 
 continue =  (e) => {
+   
     e.preventDefault();
+    if (this.props.questionOne === '')
+    alert('Please answer the question!')
+    else
     //process form
     this.props.nextStep();
 }
@@ -19,23 +23,23 @@ render(){
 const {values, handleChange } = this.props; 
 
             return (
-        <div className="form-group">
-        <h1 className="header-one">Question 1</h1>
-        < br/>
+        <div className="myForm">
+        <h1 className="header-one">let's begin</h1>
+       
             <form> 
-            <div className="form-group">
-            <label> What thing do you like? </label> <br/>
+            <label> how are you? </label>
+           <br/>
             <input 
             onChange={handleChange('questionOne')} autoComplete='off'
             type='text' 
             placeholder="Eg. Things." 
             defaultValue={values.questionOne}
          className="field" />
-    </div>
-    <button 
+  <br/>  <br/>
+  <button className="myOtherHomeButton"
 label="Continue"
 primary="true"
-onClick={this.continue}> Next </button>
+onClick={this.continue}> next </button>
 </form>
  
 </div>

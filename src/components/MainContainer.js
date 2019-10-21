@@ -53,26 +53,22 @@ this.setState({[input]: e.target.value})
   }
  
 
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+}
 
   render() {
   return ( 
     <>
 
     <Router>
-       <NavBar /> 
-   
-    <div> Hello and  Welcome to the MAIN container<div />
-
+    <NavBar />  
     <Switch>
- 
     <Route exact path="/home" component={GenreContainer}  />
     <Route exact path="/home/stories" component={StoryContainer} />
     <Route exact path="/home/question" component={QuestionForm} />
     <Route exact path="/home/stories/yourstory" component={YourStory} />
-
     </Switch>
-      </div>
     </Router>
     </>  
   );
