@@ -5,9 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url(http://cur.cursors-4u.net/user/use-1/use3.cur), auto !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    cursor: url(http://cur.cursors-4u.net/user/use-1/use3.cur), auto !important;
 }
