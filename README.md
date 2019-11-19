@@ -4,14 +4,14 @@
 <b> An app where you generate a spoken-aloud story based on how you answer 6 questions. Contains full CRUD.  </b>
 </br>
 </br>
-Back-end can be found<a href='https://github.com/Meganimation/mod5bot'> here. </a> 
+Back-end can be found<a href='https://github.com/Meganimation/OpenStoryBACKEND'> here. </a> 
 </br>
 </br>
 <h2> How to Install and View... </h2>
 
 <ul>  - Fork the above repo. </ul>
 
-<ul>  - Fork <a href='https://github.com/Meganimation/mod5bot'>this</a> repo. </ul>
+<ul>  - Fork <a href='https://github.com/Meganimation/OpenStoryBACKEND'>this</a> repo. </ul>
 
 <ul>  - Open both repos in seperate terminals </ul>
 
@@ -24,18 +24,14 @@ Back-end can be found<a href='https://github.com/Meganimation/mod5bot'> here. </
 </br>
 <h3> Frontend </h3>
 </br>
- HTML, CSS, Javascript, React, Redux, JQuery, JSON 
+ HTML, CSS, Javascript, React, JQuery, JSON 
 <h3> Backend </h3>
 </br>
-Ruby, Rails, Python, PostGres
-<h3> Machine Learning / AI </h3>
-</br> 
-DialogFlow, Redux
-<h3> Misc. </h3>
-Bridge CC, Cintiq Bamboo 2, Animate CC, Photoshop CS5, Illustrator CC,
+Ruby, Rails, SQLite
+
 </br> 
 <h2> Credits & Contributions </h2>
-A huge thank you to everyone at Flatiron School, and a special shoutout to Eric, Jack, Nikki and Graham for helping me unlock my potential. 
+A huge thank you to everyone at Flatiron School, and a special shoutout to Eric, Jack, Nicky and Graham for helping me unlock my potential. 
 </br> 
 </br> 
 <i> For any issues, queries, or feedback, please email MeganOliviaWendyAdams@gmail.com </i>
