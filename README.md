@@ -1,70 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<u> <h1> JustStory - Frontend</h1> </u>
+</br>
+</br>
+<b> An app where you generate a spoken-aloud story based on how you answer 6 questions. Contains full CRUD.  </b>
+</br>
+</br>
+Back-end can be found<a href='https://github.com/Meganimation/mod5bot'> here. </a> 
+</br>
+</br>
+<h2> How to Install and View... </h2>
 
-## Available Scripts
+<ul>  - Fork the above repo. </ul>
 
-In the project directory, you can run:
+<ul>  - Fork <a href='https://github.com/Meganimation/mod5bot'>this</a> repo. </ul>
 
-### `yarn start`
+<ul>  - Open both repos in seperate terminals </ul>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<ul>  - For the front-end, enter in the terminal 'npm i && npm start' </ul>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# juststoryFRONTEND
-# openstoryFRONTEND
+<ul>  - For the back-end, enter in the terminal 'bundle i && rails s' </ul>
+</br>
+</br>
+<h2> Languages / Frameworks Used... </h2>
+</br>
+<h3> Frontend </h3>
+</br>
+ HTML, CSS, Javascript, React, Redux, JQuery, JSON 
+<h3> Backend </h3>
+</br>
+Ruby, Rails, Python, PostGres
+<h3> Machine Learning / AI </h3>
+</br> 
+DialogFlow, Redux
+<h3> Misc. </h3>
+Bridge CC, Cintiq Bamboo 2, Animate CC, Photoshop CS5, Illustrator CC,
+</br> 
+<h2> Credits & Contributions </h2>
+A huge thank you to everyone at Flatiron School, and a special shoutout to Eric, Jack, Nikki and Graham for helping me unlock my potential. 
+</br> 
+</br> 
+<i> For any issues, queries, or feedback, please email MeganOliviaWendyAdams@gmail.com </i>
