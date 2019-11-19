@@ -23,7 +23,7 @@ Back-end can be found<a href='https://github.com/Meganimation/OpenStoryBACKEND'>
 </br>
 </br>
 <h2> Languages / Frameworks Used... </h2>
-</br>
+
 <h3> Frontend </h3>
 </br>
  HTML, CSS, Javascript, React, JQuery, JSON 
