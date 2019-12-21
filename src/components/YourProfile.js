@@ -2,12 +2,20 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
+
+// (NOTE: Some of the things that need updating include fixing the props and localstorage issue, and making sure the right info is being shown... It might be a good idea to rewrite most of this... (Include name, stories webkitConvertPointFromPageToNode, latest story? email? picture?))
+
 class YourProfile extends Component {
 
 
-state = {
-    name: this.props.location.state.stories[0][0].user.name
-}
+// state = {
+//     name: this.props.location.state.stories[0][0].user.name
+// }
+
+
+
+
+
 
 
     updateUserName=()=>{
@@ -56,6 +64,11 @@ state = {
 
 findUser=()=>{ 
     const newArr = []
+    if  (this.props.location.state.stories.length < 2) {
+        return 'no stories'
+    }
+    else 
+
     this.props.location.state.stories[0].map((user) => {
         if (user.user.id === 1)    {    
             newArr.push(user.user.name)
@@ -80,14 +93,14 @@ render() {
      
         <div className="myBox">
         
-     <b>name:</b> {this.state.name} 
+     <b>name:</b> {localStorage.name} 
      <br/>
      
  
 
        <b> stories saved: </b>{this.findUser()} 
        <br/>
-       <b> latest author: </b>{this.props.location.state.stories[0].slice(-1)[0].questionSix}
+       {/* <b> latest story name: </b>{this.props.location.state.stories[0].slice(-1)[0].questionSix} */}
        <br/>
        <br/>
 

@@ -52,7 +52,7 @@ const {values, handleChange } = this.props;
         <input 
         onChange={handleChange('questionSix')} autoComplete='off'
         type='text' 
-        placeholder="Eg. Bob" 
+        placeholder="Eg. The Greatest Story Ever" 
         defaultValue={values.questionSix}
         className="field" />
 

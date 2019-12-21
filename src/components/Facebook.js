@@ -20,7 +20,11 @@ export default class Facebook extends Component {
 
 
 
-
+setGuestLocalStorage = () => {
+    ls.set('userID', '1');
+    ls.set('name', 'Guest User');
+    ls.set('email', 'guest@email.com');
+}
 
     responseFacebook = response => {
     this.setState({
@@ -75,7 +79,7 @@ export default class Facebook extends Component {
             <br/>
             <br/>
         
-             <Link exact to="/home"><button className="myOtherHomeButton">login as guest</button></Link>
+             <Link exact to="/home"><button onClick={this.setGuestLocalStorage}className="myOtherHomeButton">login as guest</button></Link>
              <br/>
             <br/>
           

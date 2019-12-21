@@ -21,9 +21,9 @@ back =  (e) => {
 
 
 containsWord=()=>{
+debugger
 
-
-    if  (this.props.guestID === 1) {
+    if  (localStorage.userID.length <= 3) {
     return (
         <>
         i see you're logged in as a guest.
@@ -32,7 +32,7 @@ containsWord=()=>{
         </>) 
     }
 
-    else return 'what would you like to call your main character?.'
+    else return `what would you like to call your main character, ${localStorage.name}?`
 }
 
 
